@@ -93,6 +93,8 @@
         line-height: 26px;
         font-weight: 600;
         margin-bottom: 50px;
+        max-width: 370px;
+        align-self: flex-start;
     }
 
     .market-items {

@@ -171,12 +171,14 @@
 @media screen and (max-width:460px){
     .explore-statement h2 {
         font-size: 34px;
+        max-width: 370px;
     }
 
     .explore-statement p {
         font-size: 18px;
         line-height: 30px;
         margin-top: 10px;
+        max-width: 370px;
     }
 
     .explore-wrapper {
