@@ -1,0 +1,225 @@
+.explore-container {
+    width: 100%;
+    background: #301E2F;
+    display: flex;
+}
+
+.explore-wrapper {
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.explore-statement {
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore-statement h2 {
+    font-size: 64px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    line-height: 67px;
+    height: 171px;
+    max-width: 609px;
+    color: #fff;
+}
+
+.explore-statement p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 42px;
+  max-width: 630px;
+  height: 84px;
+  color: #fff;
+}
+
+.rectangle {
+    width: 352px;
+    height: 252px;
+    margin-bottom: 15px;
+}
+
+.explore-image {
+    border: 5px solid;
+    border-image: linear-gradient(90deg, #E5A663 0%, #801155 100%) 1;
+    padding: 20px;
+}
+
+.explore-image-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(405px, 1fr));
+    justify-items: center;
+    gap: 10px;
+    /*display: flex;
+    justify-content: space-between;*/
+    margin-bottom: 50px;
+}
+
+.explore-image h3 {
+  font-size: 25px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 30.26px;
+  color: #fff;
+}
+
+.explore-rarity {
+    display: flex;
+    align-items: center;
+}
+
+.explore-rarity button {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18.15px;
+    padding: 10px;
+    width: 87px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #E5A663 0%, #801155 100%);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.explore-rarity img {
+    width: 42px;
+    height: 30px;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #e5a663, #801155) 1;
+    margin-left: 12px;
+}
+
+.explore-image-bottom {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.explore-price {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.ethereum {
+    display: flex;
+    align-items: center;
+}
+
+.ethereum h3 {
+    font-weight: 500;
+    margin-left: 6px;
+}
+
+.explore-price .fa-cart-shopping {
+    margin: 0;
+}
+
+.explore-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-view button {
+    width: 239px;
+    height: 87px;
+    background: linear-gradient(90deg, #E5A663 0%, #801155 100%);
+    border-radius: 20px 0px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    color: #fff;
+}
+
+.explore-view button:hover {
+    cursor: pointer;
+}
+
+/* media queries*/
+
+@media screen and (max-width:1150px) {
+    .explore-statement h2 {
+        font-size: 40px;
+        line-height: 50px;
+        height: 100px;
+    }
+
+    .explore-statement {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media screen and (max-width:1000px) {
+    .explore-statement {
+        flex-direction: column;
+        justify-content: flex-start
+    }
+}
+
+@media screen and (max-width:460px){
+    .explore-statement h2 {
+        font-size: 34px;
+    }
+
+    .explore-statement p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    .explore-wrapper {
+        padding-top: 20px;
+    }
+
+    .rectangle {
+        width: 300px;
+        height: 202px;
+        margin-bottom: 15px;
+    }
+
+    .explore-image h3 {
+        font-size: 20px;
+    }
+
+    .explore-price {
+        align-items: center;
+    }
+
+    .ethereum img {
+        height: 30px;
+    }
+
+    .explore-view button {
+        width: 200px;
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .explore-image-section {
+        justify-items: flex-start;
+    }
+
+    .explore-statement h2 {
+        font-size: 30px;
+        max-width: 340px;
+    }
+
+    .explore-statement p {
+        max-width: 340px;
+    }
+
+}

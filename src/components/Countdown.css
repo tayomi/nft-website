@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clock {
+    display: flex;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 39px;
+}
+
+.clock-moment {
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #e5a663, #801155) 1;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.timer button {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400;
+    width: 193px;
+    height: 51px;
+    border: 4px solid #e5a663;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.timer button:hover {
+  cursor: pointer;
+  color: #e5a663;
+  transition: 0.3s all ease-out;
+}
+
+.timer h4 {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (max-width:600px) {
+    .timer {
+        align-items: flex-start;
+    }
+
+    .clock-moment {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width:460px){
+    .timer h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .timer button {
+        font-size: 20px;
+        height: 40px;
+        width: 150px;
+    }
+
+    .clock {
+        margin-bottom: 20px;
+    }
+
+    .hero-bid {
+        padding: 0;
+    }
+}

@@ -1,0 +1,250 @@
+.hero-container {
+    width: 100%;
+    background-image: linear-gradient(180deg, #1D1D1D, #4E204D);
+    display: flex;
+}
+
+.hero-home {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1500px;
+    position: relative;
+}
+
+.hero-home img {
+    position: absolute;
+    width: 646px;
+    height: 600px;
+    left: 51%;
+}
+
+.hero-statement h2 {
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    max-width: 697px;
+    line-height: 110px;
+    font-weight: 700;
+    margin-top: 86px;
+    color: #fff;
+}
+
+.hero-statement p {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    max-width: 677px;
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-statement span {
+    color: #801155;
+}
+
+.hero-explore {
+    display: flex;
+    align-items: center;
+}
+
+.hero-explore button {
+    padding: 10px;
+    width: 295px;
+    height: 107px;
+    border-radius: 20px 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    background: linear-gradient(90deg, #E5A663 0%, #801155 100%);
+    margin-right: 50px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.hero-explore button:hover {
+   cursor: pointer;
+}
+
+.hero-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-video h3 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    color: #fff;
+    font-family: 'Fugaz One', sans-serif;
+}
+
+.fa-circle-play {
+    font-size: 35px;
+    background: -webkit-linear-gradient(90deg, #E5A663 0%, #801155 100%);
+    background: -moz-linear-gradient(90deg, #E5A663 0%, #801155 100%);
+    background: linear-gradient(90deg, #E5A663 0%, #801155 100%);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-circle-play, .hero-bid-place button:hover {
+    cursor: pointer;
+}
+
+.hero-art {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 44px;
+}
+
+.hero-art h3 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 51px;
+  color:#fff;
+  font-family: 'Fugaz One', sans-serif;
+}
+
+.hero-art p {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #EF8080;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-art-stats {
+    margin-right: 39px;
+}
+
+.hero-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.hero-bid {
+  display: flex;
+  border: 6px solid;
+  border-image: linear-gradient(90deg, #E5A663 0%, #801155 100%) 1;
+  padding: 30px 17px;
+  gap: 30px;
+  color: #fff;
+}
+
+.hero-bid-place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-bid-place h4{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    /*margin-bottom: 32px;*/
+}
+
+.hero-bid-place h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.hero-bid-place button {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  width: 193px;
+  height: 51px;
+  background: linear-gradient(90deg, #E5A663 0%, #801155 100%);
+  border-radius: 10px;
+  color: #fff;
+}
+
+/*media queries*/
+
+@media screen and (max-width:1000px) {
+    .hero-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-bid {
+        margin-top: 20px;
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+
+    .hero-home img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero-bid {
+        flex-direction: column;
+    }
+
+    .hero-bid-place {
+        align-items: flex-start;
+    }
+
+    .hero-bid-place button{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .hero-bid {
+        border: none;
+    }
+
+    .hero-statement h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .hero-statement p {
+        font-size: 20px;
+    }
+
+    .hero-explore button {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .hero-video h3 {
+        font-size: 20px;
+    }
+
+    .hero-art h3 {
+        font-size: 25px;
+    }
+
+    .hero-art p {
+        font-size: 20px;
+    }
+
+    .hero-bid-place button {
+        font-size: 20px;
+        height: 40px;
+        width: 150px;
+    }
+
+    .hero-bid-place h4{
+        font-size: 20px;
+    }
+
+    .hero-bid-place h3 {
+        font-size: 18px;
+    }
+}
