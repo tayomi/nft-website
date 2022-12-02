@@ -1,12 +1,12 @@
 .news-container {
-    width: 100%;
+    width: 100vw;
     background: linear-gradient(180deg, #301E2F 20%, #4E204D 100%, rgba(78, 32, 77, 0) 99.85%);
     display: flex;
     min-height: 100vh;
 }
 
 .news-wrapper {
-    width: 1500px;
+    width: 85vw;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -15,96 +15,104 @@
 
 .news-wrapper h3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 700;
-    line-height: 52px;
+    line-height: 3.25rem;
     text-align: center;
-    margin-bottom: 86px;
+    margin-bottom: 6.375rem;
     color: #fff;
 }
 
 .news-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(405px, 1fr));
     justify-items: center;
     gap: 10px;
 }
 
 .news-select img{
-    width: 384px;
-    height: 219px;
+    width: 24rem;
+    height: 13.688rem;
 }
 
 .news-select-content {
     border: 3px solid;
     border-image: linear-gradient(90deg, #E5A663 0%, #801155 100%) 1;
-    max-width: 384px;
-    padding: 18px;
+    max-width: 24rem;
+    padding: 1.125rem;
 }
 
 .news-select-content h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 1.563rem;
     font-weight: 500;
-    line-height: 38px;
+    line-height: 2.375rem;
     color: #fff;
 }
 
 .news-select-content p {
     font-family: 'Montaga', Georgia;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 23px;
-    margin-top: 16px;
+    line-height: 1.438rem;
+    margin-top: 1rem;
     color: #fff;
 }
 
 .news-select-content h5 {
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
-    line-height: 23px;
+    line-height: 1.438rem;
     background: linear-gradient(90deg, #E5A663 0%, #801155 100%);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
     background-clip: text;
     fill: transparent;
-    margin-top: 34px;
+    margin-top: 2.125rem;
 }
 
 /*media queries */
 
 @media screen and (max-width:460px){
+
+    .news-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .news-wrapper h3 {
-        font-size: 30px;
-        margin-bottom: 50px;
+        font-size: 1.875rem;
+        margin-bottom: 3.688rem;
     }
 
     .news-wrapper {
-        padding-top: 20px;
+        padding-top: 1.25rem;
     }
 
     .news-select img {
-        max-width: 290px;
-        height: 200px;
+        max-width: 13.5rem;
+        height: 10.5rem;
     }
 
     .news-select-content {
-        max-width: 290px;
+        max-width: 13.5rem;
     }
 
     .news-select-content h4 {
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 1rem;
+        line-height: 1.563rem;
     }
 
     .news-select-content p {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
     }
 
     .news-select-content h5 {
-        font-size: 14px;
-        margin-top: 24px;
+        font-size: 0.813rem;
+        margin-top: 1rem;
+    
     }
 }

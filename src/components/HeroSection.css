@@ -1,40 +1,41 @@
 .hero-container {
-    width: 100%;
+    width: 100vw;
     background-image: linear-gradient(180deg, #1D1D1D, #4E204D);
     display: flex;
+    min-height: 100vh;
 }
 
 .hero-home {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 1500px;
+    width: 85vw;
     position: relative;
 }
 
 .hero-home img {
     position: absolute;
-    width: 646px;
-    height: 600px;
-    left: 51%;
+    width: 35vw;
+    height: 62vh;
+    left: 61%;
 }
 
 .hero-statement h2 {
-    font-size: 80px;
+    font-size: 4.688rem;
     font-family: 'Poppins', sans-serif;
-    max-width: 697px;
-    line-height: 110px;
+    max-width: 43.563rem;
+    line-height: 6.875rem;
     font-weight: 700;
-    margin-top: 86px;
+    margin-top: 5.373rem;
     color: #fff;
 }
 
 .hero-statement p {
-    font-size: 25px;
+    font-size: 1.563rem;
     font-weight: 600;
-    line-height: 30px;
-    max-width: 677px;
-    margin-top: 20px;
+    line-height: 1.875rem;
+    max-width: 42.313rem;
+    margin-top: 1.25rem;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
 }
@@ -49,15 +50,15 @@
 }
 
 .hero-explore button {
-    padding: 10px;
-    width: 295px;
-    height: 107px;
+    padding: 0.525rem;
+    width: 30vh;
+    height: 11vh;
     border-radius: 20px 0;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 1.563rem;
+    line-height: 2.25rem;
     background: linear-gradient(90deg, #E5A663 0%, #801155 100%);
-    margin-right: 50px;
+    margin-right: 3.125rem;
     color: #fff;
     font-family: 'Inter', sans-serif;
 }
@@ -75,14 +76,14 @@
 
 .hero-video h3 {
     font-weight: 400;
-    font-size: 30px;
-    line-height: 44px;
+    font-size: 1.563rem;
+    line-height: 2.75rem;
     color: #fff;
     font-family: 'Fugaz One', sans-serif;
 }
 
 .fa-circle-play {
-    font-size: 35px;
+    font-size: 2.188rem;
     background: -webkit-linear-gradient(90deg, #E5A663 0%, #801155 100%);
     background: -moz-linear-gradient(90deg, #E5A663 0%, #801155 100%);
     background: linear-gradient(90deg, #E5A663 0%, #801155 100%);
@@ -105,36 +106,36 @@
 
 .hero-art h3 {
   font-weight: 400;
-  font-size: 35px;
-  line-height: 51px;
+  font-size: 1.563rem;
+  line-height: 3.25rem;
   color:#fff;
   font-family: 'Fugaz One', sans-serif;
 }
 
 .hero-art p {
     font-weight: 700;
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 1.875rem;
+    line-height: 2.813rem;
     color: #EF8080;
     font-family: 'Poppins', sans-serif;
 }
 
 .hero-art-stats {
-    margin-right: 39px;
+    margin-right: 2.438rem;
 }
 
 .hero-bottom {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 3.063rem;
 }
 
 .hero-bid {
   display: flex;
   border: 6px solid;
   border-image: linear-gradient(90deg, #E5A663 0%, #801155 100%) 1;
-  padding: 30px 17px;
-  gap: 30px;
+  padding: 2.43rem 1.053rem;
+  gap: 1.875rem;
   color: #fff;
 }
 
@@ -147,41 +148,46 @@
 }
 
 .hero-bid-place h4{
-    font-size: 25px;
+    font-size: 1.563rem;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.875rem;
     /*margin-bottom: 32px;*/
 }
 
 .hero-bid-place h3 {
   font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
 }
 
 .hero-bid-place button {
   font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
-  width: 193px;
-  height: 51px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  width: 12.063rem;
+  height: 3.188rem;
   background: linear-gradient(90deg, #E5A663 0%, #801155 100%);
   border-radius: 10px;
   color: #fff;
 }
 
+.hero-bid-place button:hover {
+    cursor: pointer;
+    color: #e5a663;
+}
+
 /*media queries*/
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1180px) {
     .hero-bottom {
         display: flex;
         flex-direction: column;
     }
 
     .hero-bid {
-        margin-top: 20px;
-        max-width: 600px;
-        margin-bottom: 20px;
+        margin-top: 1.25rem;
+        max-width: 37.5rem;
+        margin-bottom: 1.25rem;
     }
 
     .hero-home img {
@@ -189,7 +195,7 @@
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:610px) {
     .hero-bid {
         flex-direction: column;
     }
@@ -201,50 +207,63 @@
     .hero-bid-place button{
         margin-top: 10px;
     }
+
+    .hero-bid-place h4 {
+        margin-bottom: 0.625rem;
+    }
 }
 
 @media screen and (max-width:460px) {
+
     .hero-bid {
         border: none;
     }
 
     .hero-statement h2 {
-        font-size: 50px;
-        line-height: 60px;
+        font-size: 3.125rem;
+        line-height: 3.75rem;
     }
 
     .hero-statement p {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .hero-explore button {
-        width: 200px;
-        font-size: 20px;
+        font-size: 1.25rem;
+        width: 50%;
     }
 
+    .fa-circle-play {
+        font-size: 1.25rem;
+    }
+    
     .hero-video h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .hero-art h3 {
-        font-size: 25px;
+        font-size: 1.25rem;
     }
 
     .hero-art p {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .hero-bid-place button {
-        font-size: 20px;
-        height: 40px;
-        width: 150px;
+        font-size: 1rem;
+        height: 2.5rem;
+        width: 9.375rem;
     }
 
     .hero-bid-place h4{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .hero-bid-place h3 {
-        font-size: 18px;
+        font-size: 1.125rem;
+    }
+
+    .hero-art-stats {
+        margin-right: 1.5rem;
     }
 }
