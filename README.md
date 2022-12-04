@@ -1,2 +1,1 @@
-# NFTz website created with react
-# NFTz website created with React 
+# NFTz website created with react 
