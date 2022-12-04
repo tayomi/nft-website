@@ -15,8 +15,8 @@
 
 .hero-home img {
     position: absolute;
-    width: 35vw;
-    height: 62vh;
+    max-width: 52%;
+    max-height: 62%;
     left: 61%;
 }
 
@@ -178,6 +178,12 @@
 
 /*media queries*/
 
+@media screen and (max-width:1360px){
+    .hero-home img {
+        top:5%
+    }
+}
+
 @media screen and (max-width:1180px) {
     .hero-bottom {
         display: flex;
@@ -190,9 +196,13 @@
         margin-bottom: 1.25rem;
     }
 
-    .hero-home img {
-        display: none;
+
+    @media screen and (max-width:1000px){
+        .hero-home img {
+            display: none;
+        }
     }
+
 }
 
 @media screen and (max-width:610px) {
